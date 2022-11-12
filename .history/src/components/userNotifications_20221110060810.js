@@ -1,0 +1,25 @@
+import React from "react";
+import { UserAuth } from "./context/AuthContext";
+
+export default function UsersNotifications() {
+
+    const { nullToEndRegistration, medPerson } = UserAuth();
+
+    const person = medPerson.filter(e => {
+        return e.id.includes(el.data.doctorId);
+    })
+
+    return (
+        <div className="login_container">
+            {
+                nullToEndRegistration.map((el => {
+                    return (
+                        <div className="notification_message" key={el.id}>
+                            <p>Dokończ swoją rejestrację u doktora {`${person.data.name} ${person.data.surname}`}</p>
+                        </div>
+                    )
+                }))
+            }
+        </div>
+    )
+} 

@@ -1,0 +1,153 @@
+@import "./variables";
+
+.search_container {
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  margin: 0 30px 30px 30px;
+  width: calc(100% - 120px);
+  height: 100%;
+  padding: 30px;
+  overflow: scroll;
+
+  .med_person {
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    margin: 0 30px 30px 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .inner {
+      width: 100%;
+      .data_info {
+        color: $primary-color;
+        font-weight: bold;
+      }
+      .person_infomed {
+        display: flex;
+        flex-direction: row;
+        .name_surname {
+          margin-left: 10px;
+        }
+      }
+
+      .place {
+        margin-top: 5px;
+        .phone_Number {
+          margin-top: 5px;
+        }
+      }
+      .other_info {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        .list {
+          margin-top: 5px;
+        }
+        .list_diseases {
+          li {
+            margin: 5px 0 0 30px;
+            list-style: circle;
+          }
+        }
+        .price {
+          align-self: flex-end;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          .price_OtherVisit {
+            margin-top: 5px;
+          }
+        }
+      }
+      .reregistration {
+        padding: 50px;
+      }
+    }
+    .person {
+      width: 200px;
+      height: 200px;
+      background-color: #16595573;
+      //   border-radius: 100%;
+      margin: auto 50px;
+    }
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: 767px) {
+  .search_container {
+    overflow: scroll;
+    // display: flex;
+    // flex-direction: column;
+    border: 1px solid $border-color;
+    margin: 0 5% 10px 5%;
+    height: 90%;
+    width: calc(100% - 60px);
+    padding: 10px;
+    overflow: scroll;
+    .med_person {
+      display: flex;
+      flex-direction: column;
+      margin: 0 10px 10px 10px;
+      .inner {
+        .person_infomed {
+          flex-direction: column;
+          .name_surname {
+            margin-top: 5px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+    .person {
+      display: none;
+    }
+    .other_info {
+      flex-direction: column;
+      .price {
+        align-self: flex-start;
+        margin-top: 10px;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: 1023px) {
+  .search_container {
+    overflow: scroll;
+    // display: flex;
+    // flex-direction: column;
+    border: 1px solid $border-color;
+    margin: 0 5% 10px 5%;
+    height: 90%;
+    width: calc(100% - 60px);
+    padding: 10px;
+    overflow: scroll;
+    .med_person {
+      display: flex;
+      flex-direction: column;
+      margin: 0 10px 10px 10px;
+      .inner {
+        .person_infomed {
+          flex-direction: column;
+          .name_surname {
+            margin-top: 5px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+    .person {
+      display: none;
+    }
+    .other_info {
+      flex-direction: column;
+      .price {
+        align-self: flex-start;
+        margin-top: 10px;
+        justify-content: center;
+      }
+    }
+  }
+}

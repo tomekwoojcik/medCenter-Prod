@@ -1,0 +1,43 @@
+.login_container {
+
+    .regist {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px;
+        border: 1px solid $secondary-color;
+        width: 30%;
+        margin: 30px;
+        border-radius: 5px;
+
+        .error {
+            width: 100%;
+            padding: 10px;
+            color: red;
+        }
+
+        .label_register {
+            margin-top: 10px;
+            color: #606060;
+            font-size: 13px;
+            font-family: $main-font;
+        }
+
+        .input {
+            border: none;
+            background: none;
+            border-bottom: 1px solid $secondary-color;
+        }
+
+        .register_button {
+            margin-top: 10px;
+        }
+    }
+
+    .background {
+        background: url(../img/MedCenter+.png) no-repeat;
+        background-size: cover;
+        width: 60%;
+        height: 100%;
+    }
+}

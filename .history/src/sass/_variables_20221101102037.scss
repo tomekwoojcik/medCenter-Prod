@@ -1,0 +1,20 @@
+$font-logo: "Sacramento", cursive;
+$main-font: "Raleway", sans-serif;
+$primary-color: #165954;
+$light_primary-color: #488680;
+$secondary-color: #f9ac66;
+$border-color: #e0e0e0;
+$white-color: #fbf7f5;
+
+$tablet-width: 768px;
+$mobile-width: 375px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width} ) {
+  }
+}
+
+@mixin mobile {
+  @media (min-width: #{$mobile-width} ) {
+  }
+}

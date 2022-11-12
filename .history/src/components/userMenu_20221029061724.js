@@ -1,0 +1,11 @@
+import React from "react";
+import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+export default function UserMenu() {
+    return (
+        <ul className="menu_userlist">
+            <li> <a href="/mainView" className="menu_items"><CalendarMonthIcon className="dash_Board" />Konto uzytkownika</a></li>
+            <li> <a href="/searchDoctorView" className="menu_items"><CalendarMonthIcon className="dash_Board" />Kalendarz</a></li>
+            <li> <a href="/searchHospitalView" className="menu_items"><LocalHospitalIcon className="dash_Board" />Powiadomienia</a></li>
+        </ul>
+    )
+}

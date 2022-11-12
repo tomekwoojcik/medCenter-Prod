@@ -1,0 +1,21 @@
+@import "./variables";
+
+.search_container {
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  margin: 0 30px 30px 30px;
+  width: 88.3%;
+  height: 30%;
+  padding: 30px;
+  overflow: scroll;
+
+  .med_person {
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    margin: 0 30px 30px 30px;
+    padding: 10px;
+    .name_surname {
+      //   margin: 10px;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+@import "./variables";
+
+.login_container {
+  .in_box_calendar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    .pending_registrations {
+      height: calc(90% - 40px);
+      width: calc(100% - 40px);
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid $border-color;
+    }
+    .ready_registrations {
+      height: calc(100% - 40px);
+      width: calc(100% - 40px);
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid $border-color;
+    }
+  }
+}

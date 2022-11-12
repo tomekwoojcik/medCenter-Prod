@@ -1,0 +1,9 @@
+@import "./variables";
+
+.search_container {
+  border: 1px solid $border-color;
+  margin: 0 30px 30px 30px;
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}

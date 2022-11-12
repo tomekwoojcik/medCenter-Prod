@@ -1,0 +1,16 @@
+@import "./variables";
+
+.search_container {
+  .el_hospitalList {
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    margin: 0 30px 30px 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .state_nfz {
+      padding: 10px 0;
+    }
+  }
+}

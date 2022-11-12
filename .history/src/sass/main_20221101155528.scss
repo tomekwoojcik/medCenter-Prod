@@ -1,0 +1,19 @@
+@import "./reset";
+@import "./aside";
+@import "./menuBar";
+@import "./mainContainer";
+@import "./loginView";
+@import "./footer";
+@import "./registerView";
+@import "./mainView";
+@import "./searchDoctor";
+@import "./searchHospital";
+@import "./userAccount";
+@import "./userCalendar";
+@import "./userNotifications";
+
+@mixin mobile {
+  @media (min-width: #{$mobile-width} ) {
+    width: 100%;
+  }
+}

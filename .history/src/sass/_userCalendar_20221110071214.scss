@@ -1,0 +1,12 @@
+@import "./variables";
+
+.login_container {
+  .pending_registrations {
+    height: 50%;
+    width: 100%;
+    border: 1px solid $border-color;
+  }
+  .ready_registrations {
+    height: 50%;
+  }
+}

@@ -1,0 +1,57 @@
+@import "./variables";
+.search_container {
+  border: 1px solid $border-color;
+  border-radius: 5px;
+  margin: 0 30px 30px 30px;
+  width: calc(100% - 120px);
+  height: 100%;
+  padding: 30px;
+  overflow: scroll;
+
+  .med_person {
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    margin: 0 30px 30px 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    .inner {
+      .person_infomed {
+        display: flex;
+        flex-direction: row;
+        .name_surname {
+          margin-left: 10px;
+        }
+        .phone_Number {
+          margin-left: 10px;
+          align-self: flex-end;
+        }
+      }
+      .other_info {
+        display: flex;
+        justify-content: space-between;
+        .list_diseases {
+          margin-top: 5px;
+          li {
+            margin: 5px 0 0 5px;
+          }
+        }
+        .price {
+          align-self: flex-end;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          .price_OtherVisit {
+            margin-top: 5px;
+          }
+        }
+      }
+    }
+    .person {
+      width: 300px;
+      height: 300px;
+      background-color: $border-color;
+      border-radius: 100%;
+    }
+  }
+}

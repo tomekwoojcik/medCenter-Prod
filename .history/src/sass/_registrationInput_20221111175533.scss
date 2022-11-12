@@ -1,0 +1,43 @@
+@media (min-width: $mobile-width) and (max-width: 767px) {
+  .login_container {
+    .input_registration {
+      font-family: $main-font;
+      color: $primary-color;
+
+      margin: 10px;
+      width: calc(100% - 40px);
+      height: calc(100% - 40px);
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+
+      .reg_end {
+        margin-bottom: 10px;
+        .text_decor {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: 1023px) {
+  .login_container {
+    .in_box_calendar {
+      flex-direction: column;
+      overflow: scroll;
+      .pending_registrations {
+        overflow: scroll;
+        height: 100%;
+        .in_box_message {
+          height: 100%;
+          overflow: visible;
+          .notification_message {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

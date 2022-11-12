@@ -1,0 +1,35 @@
+.footer_container {
+  margin-top: 30px;
+  width: 100%;
+  height: 5%;
+  border: 1px solid $border-color;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .copy_Text {
+    font-family: $main-font;
+    margin-left: 30px;
+  }
+
+  .media {
+    margin-right: 30px;
+
+    .media_button {
+      color: $primary-color;
+    }
+
+    .media_button:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: 767px) {
+  .footer_container {
+    justify-content: space-around;
+  }
+}

@@ -1,0 +1,28 @@
+@media (min-width: $mobile-width) and (max-width: 767px) {
+  .login_container {
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    padding: 10px;
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: 1023px) {
+  .login_container {
+    .in_box_calendar {
+      flex-direction: column;
+      overflow: scroll;
+      .pending_registrations {
+        overflow: scroll;
+        height: 100%;
+        .in_box_message {
+          height: 100%;
+          overflow: visible;
+          .notification_message {
+            flex-direction: column;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+}

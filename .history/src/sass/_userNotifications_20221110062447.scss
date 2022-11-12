@@ -1,0 +1,13 @@
+@import "./variables";
+
+.login_container {
+  .in_box_message {
+    .notification_message {
+      width: calc(100% - 120px);
+      height: 15%;
+      padding: 30px;
+      margin: 30px;
+      border: 1px solid $border-color;
+    }
+  }
+}

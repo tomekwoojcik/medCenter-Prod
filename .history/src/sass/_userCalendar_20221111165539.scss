@@ -1,0 +1,45 @@
+@import "./variables";
+
+.login_container {
+  .in_box_calendar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    .title {
+      font-family: $main-font;
+    }
+    .pending_registrations {
+      font-family: $main-font;
+      color: $primary-color;
+      height: calc(100% - 40px);
+      width: calc(100% - 40px);
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid $border-color;
+      .in_box_message {
+        height: 95%;
+        display: flex;
+        .notification_message {
+          flex-direction: row;
+          height: 100%;
+        }
+      }
+    }
+    .ready_registrations {
+      height: calc(100% - 40px);
+      width: calc(100% - 40px);
+      padding: 10px;
+      margin: 10px;
+      border: 1px solid $border-color;
+    }
+  }
+
+  .ready_registrations {
+    .title {
+      font-family: $main-font;
+    }
+    .in_box_message {
+    }
+  }
+}

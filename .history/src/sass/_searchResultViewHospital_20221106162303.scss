@@ -1,0 +1,35 @@
+@import "./variables";
+
+.search_container {
+  .second_el {
+    padding-top: 5px;
+  }
+  .data_info {
+    color: $primary-color;
+    font-weight: bold;
+  }
+  .el_hospitalList {
+    border: 1px solid $border-color;
+    border-radius: 5px;
+    margin: 0 30px 30px 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .state_nfz {
+      padding-bottom: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .hospital_info {
+      padding-bottom: 10px;
+    }
+
+    .hospital_contact {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.main_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 3rem;
+}
+
+@mixin mobile {
+  @media (min-width: $mobile-width) {
+    .main_container {
+      width: 100%;
+      padding: 0 1rem;
+    }
+  }
+}
