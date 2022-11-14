@@ -1,4 +1,3 @@
-
 import { createContext, useContext, useEffect, useState } from 'react';
 import {
     createUserWithEmailAndPassword,
@@ -21,7 +20,7 @@ export const AuthContextProvider = ({ children }) => {
     const [states, setStates] = useState(["Lesser Poland Voivodeship"]);
     const [cities, setCities] = useState([]);
     const [checkCity, setCheckCity] = useState("");
-    // const [profession, setProfession] = useState([]);
+    const [profession, setProfession] = useState([]);
     const [medPerson, setMedPerson] = useState([]);
     const [dataConnectSetMedPerson, setDataConnectSetMedPerson] = useState([]);
     const [dataConnect, setDataConnect] = useState([]);
@@ -32,9 +31,10 @@ export const AuthContextProvider = ({ children }) => {
     const [handleHospital, setHandleHospital] = useState("");
     const [filtrHospital, setFiltrHospital] = useState([]);
     const [pro, setPro] = useState("");
+    const [inputTime, setInputTime] = useState("")
 
-    const arr = [checkState, checkCity, loading, checkHospitalInCity, handleHospital, filtrHospital, pro];
-    arr.forEach();
+    // const [submitCity, setSubmitCity] = useState("");
+
 
     const createUser = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password);
@@ -56,7 +56,6 @@ export const AuthContextProvider = ({ children }) => {
         return () => {
             unsubscribe();//anulowanie działania useEffect
         };
-        /* eslint-disable react-hooks/exhaustive-deps */
     }, []);
 
     const cityApi = async (city) => {

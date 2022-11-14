@@ -25,7 +25,7 @@ export default function RegistView() {
     const [passwordErr, setPasswordErr] = useState({});
     const [confirmPasswordErr, setConfirmPasswordErr] = useState({});
     const arr = [confirmPasswordErr];
-    arr.forEach()//nieuzywane rzeczy,
+    arr.forEach//nieuzywane rzeczy,
     const { createUser } = UserAuth();
     const navigate = useNavigate();
 

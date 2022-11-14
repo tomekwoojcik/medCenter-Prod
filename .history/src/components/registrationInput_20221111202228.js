@@ -12,11 +12,12 @@ const RegistrationInput = () => {
 
         return el.id.includes(book);
     })
-    arr.forEach((first) => {
+    arr.map((first) => {
         filterArr = medPerson.filter((el) => { return el.id.includes(first.data.doctorId) })
 
     })
 
+    console.log(filterArr)
     const [inputDate, setInputDate] = useState("");
     const [inputTime, setInputTime] = useState("");
 

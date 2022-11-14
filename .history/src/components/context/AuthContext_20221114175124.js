@@ -33,8 +33,7 @@ export const AuthContextProvider = ({ children }) => {
     const [filtrHospital, setFiltrHospital] = useState([]);
     const [pro, setPro] = useState("");
 
-    const arr = [checkState, checkCity, loading, checkHospitalInCity, handleHospital, filtrHospital, pro];
-    arr.forEach();
+    const arr = [checkState, checkCity, profession, checkHospitalInCity, handleHospital, filtrHospital, pro];
 
     const createUser = (email, password) => {
         return createUserWithEmailAndPassword(auth, email, password);
