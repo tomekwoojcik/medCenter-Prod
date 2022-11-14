@@ -282,7 +282,7 @@ export const AuthContextProvider = ({ children }) => {
     })
     let notificationNumber = nullToEndRegistration.length;
     let person = [];
-    nullToEndRegistration.forEach((first => {
+    nullToEndRegistration.foreach((first => {
         person = medPerson.filter(second => {
             return second.id.includes(first.data.doctorId);
         })
@@ -306,6 +306,7 @@ export const AuthContextProvider = ({ children }) => {
         return el.data.dateOfTheVisit !== null && el.data.hourOfTheVisit !== null
 
     })
+    console.log(readyRegistration);
     //-------------------------------------------------------------------
     return (
         <UserContext.Provider value={{ createUser, user, logout, signIn, states, handleButton, cities, handleCityButton, medPerson, handleProfesion, medHospital, lastNfzUniqeArr, filtrElements, uniqeArrCityHospital, handleHospitalInCityButton, filtrHospitalInCity, arrHospitalCity, uniqeProfessionMed, dataConnect, selectHospital, handleCity, handleRegistration, notificationNumber, nullToEndRegistration, person, book, setBook, sendData, readyRegistration }}>
