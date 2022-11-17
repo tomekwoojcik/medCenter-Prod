@@ -10,9 +10,9 @@ import SearchHospitalView from "./searchHospital";
 import FooterContainer from "./footer";
 import {
     BrowserRouter as Router,
-    Routes,
     Route
 } from 'react-router-dom';
+import { Switch } from "react-router";
 import { ProtectedRoute } from "./protectedRoute";
 import { UserAuth } from "./context/AuthContext";
 import UsersAccount from "./usersAccount";
@@ -28,8 +28,8 @@ export default function MainContainer() {
             {user !== null ? <MenuBar /> : <BlindMenuBar />}
 
             <Router>
-                <Routes>
-                    <Route path="/*" element={<MainView />} />
+                <Switch>
+                    <Route exact strict path="/" element={<MainView />} />
                     <Route path="/loginView" element={<LoginView />} ></Route>
                     <Route path="/registView" element={<RegistView />} ></Route>
                     <Route path="/userView" element={
@@ -45,7 +45,7 @@ export default function MainContainer() {
                     <Route path="/searchDoctorView" element={<SearchDoctorView />} ></Route>
                     <Route path="/searchHospitalView" element={<SearchHospitalView />} ></Route>
                     <Route path="/usersCalendar/:registrationInput" element={<RegistrationInput />} ></Route>
-                </Routes>
+                </Switch>
             </Router>
             <FooterContainer />
         </div>

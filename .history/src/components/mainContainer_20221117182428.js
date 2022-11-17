@@ -29,7 +29,7 @@ export default function MainContainer() {
 
             <Router>
                 <Routes>
-                    <Route path="/*" element={<MainView />} />
+                    <Route path="/" element={<MainView />} />
                     <Route path="/loginView" element={<LoginView />} ></Route>
                     <Route path="/registView" element={<RegistView />} ></Route>
                     <Route path="/userView" element={

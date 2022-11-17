@@ -29,21 +29,21 @@ export default function MainContainer() {
 
             <Router>
                 <Routes>
-                    <Route path="/*" element={<MainView />} />
-                    <Route path="/loginView" element={<LoginView />} ></Route>
-                    <Route path="/registView" element={<RegistView />} ></Route>
-                    <Route path="/userView" element={
+                    <Route exact strict path="/" element={<MainView />} />
+                    <Route path="/:loginView" element={<LoginView />} ></Route>
+                    <Route path="/:registView" element={<RegistView />} ></Route>
+                    <Route path="/:userView" element={
                         <ProtectedRoute>
                             <UsersAccount />
                             <UsersNotifications />
                             <UsersCalendar />
                         </ProtectedRoute> //zabezpieczenie routingu do mainview 
                     } ></Route>
-                    <Route path="/userAccount" element={<UsersAccount />}></Route>
-                    <Route path="/userNotifications" element={<UsersNotifications />}></Route>
-                    <Route path="/usersCalendar" element={<UsersCalendar />}></Route>
-                    <Route path="/searchDoctorView" element={<SearchDoctorView />} ></Route>
-                    <Route path="/searchHospitalView" element={<SearchHospitalView />} ></Route>
+                    <Route path="/:userAccount" element={<UsersAccount />}></Route>
+                    <Route path="/:userNotifications" element={<UsersNotifications />}></Route>
+                    <Route path="/:usersCalendar" element={<UsersCalendar />}></Route>
+                    <Route path="/:searchDoctorView" element={<SearchDoctorView />} ></Route>
+                    <Route path="/:searchHospitalView" element={<SearchHospitalView />} ></Route>
                     <Route path="/usersCalendar/:registrationInput" element={<RegistrationInput />} ></Route>
                 </Routes>
             </Router>

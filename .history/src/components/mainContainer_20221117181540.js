@@ -13,6 +13,7 @@ import {
     Routes,
     Route
 } from 'react-router-dom';
+
 import { ProtectedRoute } from "./protectedRoute";
 import { UserAuth } from "./context/AuthContext";
 import UsersAccount from "./usersAccount";
@@ -29,7 +30,7 @@ export default function MainContainer() {
 
             <Router>
                 <Routes>
-                    <Route path="/*" element={<MainView />} />
+                    <Route exact strict path="/" element={<MainView />} />
                     <Route path="/loginView" element={<LoginView />} ></Route>
                     <Route path="/registView" element={<RegistView />} ></Route>
                     <Route path="/userView" element={

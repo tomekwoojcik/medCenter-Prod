@@ -13,8 +13,8 @@ export default function MenuItems() {
     return (
         <ul className="menu_list">
             <li> <Link to="/" className="menu_items"><DashboardIcon className="dash_Board" />Okno główne</Link></li>
-            <li> <Link to="/searchDoctorView" className="menu_items"><SearchIcon className="dash_Board" />Wyszukaj lekarza</Link></li>
-            <li> <Link to="/searchHospitalView" className="menu_items"><LocalHospitalIcon className="dash_Board" />Wyszukaj poradnię</Link></li>
+            <li> <a to="/searchDoctorView" className="menu_items"><SearchIcon className="dash_Board" />Wyszukaj lekarza</a></li>
+            <li> <a href="/searchHospitalView" className="menu_items"><LocalHospitalIcon className="dash_Board" />Wyszukaj poradnię</a></li>
             {user !== null ? <UserMenu /> : <BlindUserMenu />}
             <Outlet />
         </ul>
