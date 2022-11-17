@@ -1,4 +1,5 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 export default function MainView() {
 
 
@@ -17,7 +18,9 @@ export default function MainView() {
                         <li>Znaleźć swoją historię choroby.</li>
                     </ul>
                 </article>
+
             </div>
+            <Outlet />
         </div>
     )
 }

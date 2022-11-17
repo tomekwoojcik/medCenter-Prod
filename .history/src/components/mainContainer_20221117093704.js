@@ -19,7 +19,6 @@ import UsersAccount from "./usersAccount";
 import UsersNotifications from "./userNotifications";
 import UsersCalendar from "./userCalendar";
 import RegistrationInput from "./registrationInput";
-import Home from "./home";
 
 
 export default function MainContainer() {
@@ -30,7 +29,7 @@ export default function MainContainer() {
 
             <Router>
                 <Routes>
-                    <Route exact strict path="/" element={<Home />} >
+                    <Route exact strict path="/" element={<MainView />} >
                         <Route path="loginView" element={<LoginView />} ></Route>
                         <Route path="registView" element={<RegistView />} ></Route>
                         <Route path="userView" element={
@@ -41,12 +40,11 @@ export default function MainContainer() {
                             </ProtectedRoute> //zabezpieczenie routingu do mainview 
                         } ></Route>
                         <Route path="userAccount" element={<UsersAccount />}></Route>
-                        <Route path="mainView" element={<MainView />}></Route>
                         <Route path="userNotifications" element={<UsersNotifications />}></Route>
                         <Route path="usersCalendar" element={<UsersCalendar />}></Route>
                         <Route path="searchDoctorView" element={<SearchDoctorView />} ></Route>
                         <Route path="searchHospitalView" element={<SearchHospitalView />} ></Route>
-                        <Route path="usersCalendar/:registrationInput" element={<RegistrationInput />} ></Route>
+                        <Route path="usersCalendar/registrationInput" element={<RegistrationInput />} ></Route>
                     </Route>
 
 
