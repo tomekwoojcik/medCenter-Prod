@@ -11,7 +11,8 @@ import FooterContainer from "./footer";
 import {
     BrowserRouter as Router,
     Routes,
-    Route
+    Route,
+    Switch
 } from 'react-router-dom';
 import { ProtectedRoute } from "./protectedRoute";
 import { UserAuth } from "./context/AuthContext";
@@ -45,6 +46,8 @@ export default function MainContainer() {
                     <Route path="searchDoctorView" element={<SearchDoctorView />} ></Route>
                     <Route path="searchHospitalView" element={<SearchHospitalView />} ></Route>
                     <Route path="usersCalendar/:registrationInput" element={<RegistrationInput />} ></Route>
+
+
                 </Routes>
             </Router>
             <FooterContainer />

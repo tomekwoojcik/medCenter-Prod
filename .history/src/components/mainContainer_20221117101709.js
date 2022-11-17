@@ -11,7 +11,8 @@ import FooterContainer from "./footer";
 import {
     BrowserRouter as Router,
     Routes,
-    Route
+    Route,
+    Switch
 } from 'react-router-dom';
 import { ProtectedRoute } from "./protectedRoute";
 import { UserAuth } from "./context/AuthContext";
