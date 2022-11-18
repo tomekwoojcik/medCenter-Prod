@@ -11,7 +11,7 @@ import FooterContainer from "./footer";
 import {
     BrowserRouter as Router,
     Routes,
-    Route, Outlet
+    Route
 } from 'react-router-dom';
 import { ProtectedRoute } from "./protectedRoute";
 import { UserAuth } from "./context/AuthContext";
@@ -26,7 +26,7 @@ export default function MainContainer() {
     return (
         <div className="main_container">
             {user !== null ? <MenuBar /> : <BlindMenuBar />}
-            <Outlet />
+
             <Router>
                 <Routes>
                     <Route path="loginView" element={<LoginView />} ></Route>

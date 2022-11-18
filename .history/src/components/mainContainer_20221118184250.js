@@ -11,7 +11,8 @@ import FooterContainer from "./footer";
 import {
     BrowserRouter as Router,
     Routes,
-    Route, Outlet
+    Route,
+    Link
 } from 'react-router-dom';
 import { ProtectedRoute } from "./protectedRoute";
 import { UserAuth } from "./context/AuthContext";
@@ -21,13 +22,25 @@ import UsersCalendar from "./userCalendar";
 import RegistrationInput from "./registrationInput";
 
 
+import DashboardIcon from '@mui/icons-material/Dashboard';
+import SearchIcon from '@mui/icons-material/Search';
+import LocalHospitalIcon from '@mui/icons-material/LocalHospital';
+import UserMenu from "./userMenu";
+import BlindUserMenu from "./blindUserMenu";
+
+
 export default function MainContainer() {
     const { user } = UserAuth();
     return (
         <div className="main_container">
             {user !== null ? <MenuBar /> : <BlindMenuBar />}
-            <Outlet />
+
             <Router>
+                <ul className="menu_list">
+                    <li> <Link to="/" className="menu_items"><DashboardIcon className="dash_Board" />Okno główne</Link></li>
+                    <li> <Link to="/searchDoctorView" className="menu_items"><SearchIcon className="dash_Board" />Wyszukaj lekarza</Link></li>
+                    <li> <Link to="/searchHospitalView" className="menu_items"><LocalHospitalIcon className="dash_Board" />Wyszukaj poradnię</Link></li>
+                </ul>
                 <Routes>
                     <Route path="loginView" element={<LoginView />} ></Route>
                     <Route path="registView" element={<RegistView />} ></Route>
@@ -52,4 +65,7 @@ export default function MainContainer() {
         </div>
     )
 }
+
+
+
 
