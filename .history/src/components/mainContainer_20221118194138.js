@@ -19,7 +19,7 @@ import UsersAccount from "./usersAccount";
 import UsersNotifications from "./userNotifications";
 import UsersCalendar from "./userCalendar";
 import RegistrationInput from "./registrationInput";
-import Main from "./main";
+
 
 export default function MainContainer() {
     const { user } = UserAuth();
@@ -31,7 +31,6 @@ export default function MainContainer() {
                 <Routes>
                     <Route path="/" element={<MainView />} >
                         <Route path="loginView" element={<LoginView />} ></Route>
-                        <Route path="main" element={<Main />} ></Route>
                         <Route path="registView" element={<RegistView />} ></Route>
                         <Route path="userView" element={
                             <ProtectedRoute>

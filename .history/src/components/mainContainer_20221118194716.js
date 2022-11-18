@@ -29,9 +29,8 @@ export default function MainContainer() {
             <Outlet />
             <Router>
                 <Routes>
-                    <Route path="/" element={<MainView />} >
+                    <Route path="/" element={<Main />} >
                         <Route path="loginView" element={<LoginView />} ></Route>
-                        <Route path="main" element={<Main />} ></Route>
                         <Route path="registView" element={<RegistView />} ></Route>
                         <Route path="userView" element={
                             <ProtectedRoute>
