@@ -30,9 +30,10 @@ export default function MainContainer() {
 
             <Router>
                 <ul className="menu_list">
-                    <li> <Link to="/main" className="menu_items">Okno główne</Link></li>
+                    <li> <Link to="/" className="menu_items">Okno główne</Link></li>
                     <li> <Link to="/searchDoctorView" className="menu_items">Wyszukaj lekarza</Link></li>
                     <li> <Link to="/searchHospitalView" className="menu_items">Wyszukaj poradnię</Link></li>
+                    // {user !== null ? <UserMenu /> : <BlindUserMenu />}
                 </ul>
                 <Routes>
                     <Route path="loginView" element={<LoginView />} ></Route>
@@ -47,7 +48,7 @@ export default function MainContainer() {
                     <Route path="userAccount" element={<UsersAccount />}></Route>
                     <Route path="userNotifications" element={<UsersNotifications />}></Route>
                     <Route path="usersCalendar" element={<UsersCalendar />}></Route>
-                    <Route path="/main" element={<MainView />} ></Route>
+                    <Route path="/" element={<MainView />} ></Route>
                     <Route path="searchDoctorView" element={<SearchDoctorView />} ></Route>
                     <Route path="searchHospitalView" element={<SearchHospitalView />} ></Route>
                     <Route path="usersCalendar/:registrationInput" element={<RegistrationInput />} ></Route>
