@@ -20,7 +20,6 @@ import UsersNotifications from "./userNotifications";
 import UsersCalendar from "./userCalendar";
 import RegistrationInput from "./registrationInput";
 import Main from "./main";
-import MenuItems from "./menuItems";
 
 export default function MainContainer() {
     const { user } = UserAuth();
@@ -28,7 +27,6 @@ export default function MainContainer() {
         <div className="main_container">
             {user !== null ? <MenuBar /> : <BlindMenuBar />}
             <Router>
-                <Link to="main" className="menu_items">Okno główne</Link>
                 <Routes>
                     <Route path="/" element={<MainView />} >
                         <Route path="loginView" element={<LoginView />} ></Route>

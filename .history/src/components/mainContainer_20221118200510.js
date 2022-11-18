@@ -28,7 +28,7 @@ export default function MainContainer() {
         <div className="main_container">
             {user !== null ? <MenuBar /> : <BlindMenuBar />}
             <Router>
-                <Link to="main" className="menu_items">Okno główne</Link>
+                <MenuItems />
                 <Routes>
                     <Route path="/" element={<MainView />} >
                         <Route path="loginView" element={<LoginView />} ></Route>
