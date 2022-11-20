@@ -47,7 +47,6 @@ export default function MainContainer() {
         <div className="main_container">
             <Router>
                 {user !== null ? <MenuBar /> : <BlindMenuBar />}
-
                 <div className="menu">
                     <h1 className="logo"><span className="other_color">med</span>Center<span className="other_color back">+</span></h1>
                     <ul className="menu_userlist">

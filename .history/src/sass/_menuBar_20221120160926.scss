@@ -45,18 +45,16 @@
       padding: 10px;
       border: 1px solid $border-color;
       border-radius: 5px;
-      color: $primary-color;
-      text-decoration: none;
 
       .message_box {
         padding-right: 20px;
         text-decoration: none;
         color: black;
+        text-decoration: none;
 
         .notification_counter {
           color: $light_primary-color;
           font-weight: bolder;
-          text-decoration: none;
         }
 
         p {
@@ -65,7 +63,6 @@
           align-self: flex-start;
           color: $primary-color;
           font-weight: bolder;
-          text-decoration: none;
         }
       }
     }
