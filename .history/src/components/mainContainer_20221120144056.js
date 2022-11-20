@@ -61,7 +61,7 @@ export default function MainContainer() {
                         <li> <Link to="/usersCalendar" className="menu_items"><CalendarMonthIcon className="dash_Board" />Kalendarz</Link></li>
                         <li> <Link to="/userNotifications" className="menu_items"><NotificationsIcon className="dash_Board" />Powiadomienia</Link></li>
                     </ul> : <BlindUserMenu />}
-                    {user !== null ? <Link to={"/"} onClick={handleLogout} className="button" color="primary" variant="contained">Wyloguj</Link> : <Link to="/loginView" className="button" color="primary" variant="contained">Zaloguj</Link>}
+                    {user !== null ? <Button onClick={handleLogout} className="button" color="primary" variant="contained">Wyloguj</Button> : <Button href="/loginView" className="button" color="primary" variant="contained">Zaloguj</Button>}
                 </div>
                 <Routes>
                     <Route path="/" element={<MainView />} >
