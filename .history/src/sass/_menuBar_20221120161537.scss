@@ -82,19 +82,14 @@
 
   .box_bar {
     // margin: 50px 0 30px 0;
-    margin-bottom: 15px;
     width: 90%;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     height: 100%;
     .user_inBox {
       font-size: 18px;
       margin-bottom: 10px;
     }
-  }
-  .in_box {
-    margin-left: 20px;
   }
 }
 

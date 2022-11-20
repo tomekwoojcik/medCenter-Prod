@@ -55,22 +55,7 @@
         overflow: scroll;
         height: 100%;
         .in_box_message {
-          height: calc(100% - 40px);
-          width: calc(100% - 42px);
-          overflow: visible;
-          .notification_message {
-            flex-direction: column;
-            align-items: center;
-          }
-        }
-      }
-      .ready_registrations {
-        overflow: scroll;
-        height: 100%;
-        .in_box_message {
-          height: calc(100% - 40px);
-          width: calc(100% - 42px);
-
+          height: 100%;
           overflow: visible;
           .notification_message {
             flex-direction: column;
@@ -106,8 +91,6 @@
         height: 100%;
         .in_box_message {
           height: calc(100% - 40px);
-          width: calc(100% - 42px);
-
           overflow: visible;
           .notification_message {
             flex-direction: column;
