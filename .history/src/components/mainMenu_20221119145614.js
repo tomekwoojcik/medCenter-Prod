@@ -5,7 +5,7 @@ import { UserAuth } from "./context/AuthContext";
 
 
 export default function Menu() {
-    const { logout, user, loading } = UserAuth();
+    const { logout, loading } = UserAuth();
 
     const handleLogout = async () => {
         try {
@@ -24,7 +24,7 @@ export default function Menu() {
         <div className="aside">
 
             <h1 className="logo"><span className="other_color">med</span>Center<span className="other_color back">+</span></h1>
-            <MenuItems />
+            {/* <MenuItems /> */}
             <span className="line" >
                 {user !== null ? <Button onClick={handleLogout} className="button" color="primary" variant="contained">Wyloguj</Button> : <Button href="/loginView" className="button" color="primary" variant="contained">Zaloguj</Button>}
             </span>

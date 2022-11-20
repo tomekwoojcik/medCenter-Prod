@@ -1,0 +1,76 @@
+.login_container {
+  .in_div {
+    padding: 30px;
+    width: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    .main_img {
+      background-image: url("../img/medycyna-holistyczna-826x470.jpeg");
+      background-position: center;
+      width: 60vh;
+      height: 60vh;
+    }
+
+    .main_article {
+      margin: 20px;
+
+      h3 {
+        span {
+          font-weight: 700;
+        }
+
+        font-family: $main-font;
+        font-size: 2rem;
+      }
+
+      p {
+        padding-top: 10px;
+        font-family: $main-font;
+      }
+
+      ul {
+        padding-top: 10px;
+
+        li {
+          font-family: $main-font;
+          padding-top: 10px;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: 767px) {
+  .login_container {
+    height: 100%;
+    .in_div {
+      width: 100%;
+      flex-direction: column;
+      padding: 0;
+
+      .main_img {
+        width: 100%;
+        height: 30vh;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-width) and (max-width: 1023px) {
+  .login_container {
+    height: 100%;
+    .in_div {
+      width: 100%;
+      flex-direction: column;
+      padding: 0;
+
+      .main_img {
+        width: 100%;
+        height: 30vh;
+      }
+    }
+  }
+}
